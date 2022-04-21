@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import {ButtonsHeader, Container, HeaderHome, HireMe,ContainerButtons} from "../style/home";
 import { Apresentation } from "../components/Apresentation";
+import { Tasks } from "../components/Tasks";
+import { AboutMe } from "../components/AboutMe";
 import { Skills } from "../components/Skills";
 
 export function Home(){
@@ -56,8 +58,9 @@ export function Home(){
             <Container>
                 <Header />
                 <Apresentation />
+                <Tasks />
+                <AboutMe />
                 <Skills />
-                <div></div>
 
             </Container>
         </div>
