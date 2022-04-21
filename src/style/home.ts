@@ -20,6 +20,7 @@ export const HireMe = styled.button`
     border: 2px solid #FFB742;
     box-sizing: border-box;
     border-radius: 50px;
+    cursor:pointer;
 `
 
 export const ButtonsHeader = styled.button`

@@ -61,8 +61,8 @@ export function Tasks(){
             gap:"5px",
             paddingBottom:"50px",
         }}>
-            <Cards quantidade={"+5"} describe={"Years of experience"}/>  
-            <Cards quantidade={"100+"} describe={"completed projects"}/>  
+            <Cards quantidade={"+1"} describe={"Years of experience"}/>  
+            <Cards quantidade={"10+"} describe={"completed projects"}/>  
             <Cards quantidade={"50+"} describe={"happy clients"}/>
                     
             

@@ -1,19 +1,40 @@
-import React, { Fragment } from "react";
+import React, { ButtonHTMLAttributes, Fragment } from "react";
 import {ButtonsHeader, Container, HeaderHome, HireMe,ContainerButtons} from "../style/home";
 import { Apresentation } from "../components/Apresentation";
 import { Tasks } from "../components/Tasks";
 import { AboutMe } from "../components/AboutMe";
 import { Skills } from "../components/Skills";
+import { MyWorks } from "../components/MyWorks";
 
 export function Home(){
 
+    const handleGoSkills = () =>{
+        window.scroll({
+            top: 900,
+            behavior: "smooth",
+        })
+    }
+
+    const handleGoAboutMe = () =>{
+        window.scroll({
+            top: 600,
+            behavior: "smooth",
+        })
+    }
 
     const ListButtons = ()=>{
         return(
             <Fragment>
                 <ButtonsHeader>Home</ButtonsHeader>
-                <ButtonsHeader>About</ButtonsHeader>
-                <ButtonsHeader>Skills</ButtonsHeader>
+                <ButtonsHeader onClick={event=>{
+                    event.preventDefault();
+                    handleGoAboutMe();
+                }}>About</ButtonsHeader>
+                <ButtonsHeader onClick={event=>{
+                    event.preventDefault();
+                    handleGoSkills()
+
+                }}>Skills</ButtonsHeader>
                 <ButtonsHeader>Portfolio</ButtonsHeader>
                 <ButtonsHeader>Contact</ButtonsHeader>
             </Fragment>
@@ -61,7 +82,7 @@ export function Home(){
                 <Tasks />
                 <AboutMe />
                 <Skills />
-
+                <MyWorks />
             </Container>
         </div>
     )
