@@ -65,10 +65,3 @@ export const Perfil = styled.img`
     width: 120px;
 `
 
-export const SkillArea = styled.div`
-    width: 30%;
-    height: 110px;
-    background: rgba(56, 62, 69, 0.44);
-    border:none;
-    
-`
